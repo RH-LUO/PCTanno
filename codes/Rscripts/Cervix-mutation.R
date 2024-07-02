@@ -26,56 +26,6 @@ setwd(data_path)
 cell_summary <- read.csv('cell_summary.txt',sep = "\t",header = T)
 tissue_summary <- read.table('/data2/rluo4/RPMfunc/PCTanno_pdata/tissue_summary.txt')
 ################################################################################
-# NS <- tissue_summary$Replicates[tissue_summary$`Disease Stage` %in% c('Healthy','ADJ')]
-# NS <- gsub('cd45+', 'cd45', NS)
-# # writeLines(NS, "/home/lorihan/RPMfunc/PCTanno_pdata/Normal_Samples.txt")
-# # scp -rp lorihan@10.91.221.59:/home/lorihan/RPMfunc/PCTanno_pdata/* /public/home/lorihan/PCTanno_pdata/
-# setwd('/data2/rluo4/RPMfunc/PCTanno_pdata/')
-# HTA11_DNA <- read.csv('HTA11_VCF_table.txt',sep = ';')
-# HTA11_DNA$Filename <- sapply(HTA11_DNA$Filename, function(x) strsplit(x, '/')[[1]][3])
-# # str_split(HTA11_DNA$Filename,'/',simplify = TRUE)[,3]
-# HTA11_DNA$Atlas.Name <- sapply(HTA11_DNA$Filename, function(x) strsplit(x, '.rmdup.')[[1]][1])
-# #str_split(HTA11_DNA$Filename,'.rmdup.',simplify = TRUE)[,1]
-# HTA11_DNA$Atlas.Name <- sapply(HTA11_DNA$Filename, function(x) strsplit(x, '.001')[[1]][1])
-# dis <- read.csv('Chen.dis_pdata.csv')
-# val <- read.csv('Chen.val_pdata.csv')
-# abn <- read.csv('Chen.abn_pdata.csv')
-# Chen <- rbind(dis,val,abn)
-# table(HTA11_DNA$Biospecimen %in% Chen$Samples)
-# setdiff(HTA11_DNA$Biospecimen, Chen$Samples)
-# nchar(HTA11_DNA$Biospecimen)
-# nchar(Chen$Files)
-# nchar(Chen$Samples)
-# HTA11_DNA$short <- substr(HTA11_DNA$Biospecimen,1,16)
-# Chen$short <- substr(Chen$Files,1,16)
-# table(HTA11_DNA$short %in% Chen$short)
-# # View(HTA11_DNA[HTA11_DNA$short %ni% Chen$short,])
-# table(is.na(match(HTA11_DNA$short,Chen$short)))
-# HTA11_DNA$Samples <- Chen$barcode[match(HTA11_DNA$short,Chen$short)]
-# HTA11_DNA$Samples[is.na(HTA11_DNA$Samples)] <- HTA11_DNA$Atlas.Name[is.na(HTA11_DNA$Samples)]
-# 
-# # Chen$Tissue <- CRC_Epi$Tissue[match(Chen$Files,CRC_Epi$orig.ident)]
-# # Chen$Malignancy <-  pc_df_Chen$nearest_spline_x_vals[match(Chen$Samples,pc_df_Chen$SimplifiedSampleName)]
-# # On HPC:
-# # MATCHED_FILES=/public/home/lorihan/PCTanno_pdata/tempfile
-# # Delete the matched files or directories
-# # while IFS= read -r FILE; do
-# # rm -rf "$FILE"
-# # done < "$MATCHED_FILES"
-# # echo "Files removed."
-# # (base) lorihan@cn06 ~/SCOMATIC$ rm */*/scMapping/*/*PASS.tsv
-# # (base) lorihan@cn06 ~/SCOMATIC$ rm -rf */*/*/*ealthy* 
-# # (base) lorihan@cn06 ~/SCOMATIC$ rm -rf */*/*/*ormal* 
-# 
-# # lorihan@cn06 ~/SCOMATIC/Cervix/Hua1/scMapping$ rm -r normal/
-# # lorihan@cn06 ~/lrh/database/Liver/Losic$ rm -r scMapping
-# # lorihan@cn06 ~/lrh/database/Liver/Losic$ cp -rp scMapping_new/ ~/SCOMATIC/Liver/Losic/scMapping
-# 
-# # lorihan@cn06 ~/lrh/database/Skin/Ji$ rm -r scMapping
-# # lorihan@cn06 ~/lrh/database/Skin/Ji$ cp -rp scMapping_new/ ~/SCOMATIC/Skin/Ji/scMapping
-# 
-# # scp -rp  lorihan@10.91.221.30:/public/home/lorihan/SCOMATIC /home/lorihan/RPMfunc/
-################################################################################
 # 2) arrange the SNV pdata
 ################################################################################
 # cohort_directory <- '/data2/rluo4/RPMfunc/SCOMATIC'
