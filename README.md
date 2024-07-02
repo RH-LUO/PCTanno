@@ -10,7 +10,7 @@
 # Citation
 ### 
 # Contact us
-### luoruihan@stu.cqmu.edu.cn
+### ruihan.luo@uth.tmc.edu, luoruihan@stu.cqmu.edu.cn
         
         
         
