@@ -1,6 +1,8 @@
 # PCTanno
 ## Single-cell Landscape of Malignant Transition: Unraveling Cancer Cell-of-Origin and Heterogeneous Tissue Microenvironment
-! (https://github.com/user-attachments/assets/60b1e471-d81e-438d-8506-23edb6f45acb)
+
+![GraphicalAbstract](https://github.com/user-attachments/assets/e7e13c23-ebfc-4f50-b767-e02b52f14186)
+
 
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="">
