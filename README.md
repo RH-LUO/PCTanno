@@ -11,7 +11,8 @@
 </picture>
 
 # Citation
-https://www.ncbi.nlm.nih.gov/pubmed/38645221
+Luo R, Liu J, Wang T, Zhao W, Wang Y, Wen J, Wang H, Ding S, Zhou X. The landscape of malignant transition: Unraveling cancer cell-of-origin and heterogeneous tissue microenvironment. Cancer Lett. 2025 Jul 1;621:217591. doi: 10.1016/j.canlet.2025.217591. Epub 2025 Mar 5. PMID: 40054660.
+
 ### 
 # Contact us
 ### ruihan.luo@uth.tmc.edu, 2021324020151@stu.scu.edu.cn
